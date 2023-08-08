@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'assets/deforestation.ico')}}">
+    <title>deforestation detector</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+  </head>
+
+  <body>
+    <div>
+    <h1>Deforestation Detection</h1>
+                
+    
+    
+    <form method="post" action="/segment_display" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <h1>Past image</h1>
+                <input type="file" name="image1" class="form-control" autocomplete="off" required >
+                <input type="datetime-local" id="PastDate" name="PastDate"></input>
+                <h1 style="margin-top:50px">Present image</h1>
+                
+                <input type="file" name="image2" class="form-control" autocomplete="off" required >
+                <input type="datetime-local" id="RecentDate" name="RecentDate"></input>
+
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Segment and find area" class="btn btn-info" style = 'font-size:30px; padding: 10px'>
+        </p>
+    </form>
+
+</div>
+
+    <script src=""></script>
+  </body>
+</html>

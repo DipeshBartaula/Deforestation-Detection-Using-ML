@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'assets/deforestation.ico')}}">
+    <title>deforestation detector</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+  </head>
+
+  <body>
+    <div>
+    <h1 style = 'margin-bottom: 100px; margin-top:100px;font-size: 80px;'>Deforestation Detection</h1>
+                
+
+        <form action = "/classify"  method="post" style = "margin-bottom: 20px;">
+          <input type="submit" value="Image Classification" >
+        </form>
+        <form action = "/segment"  method="post">
+          <input type="submit" value="Segmentation and Area Calculation" >
+        </form>
+
+        
+        
+</div>
+ 
+  </body>
+</html>

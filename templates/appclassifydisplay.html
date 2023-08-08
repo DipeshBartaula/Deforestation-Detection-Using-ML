@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block head %}{% endblock%}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+  </head>
+  <body>
+    <style>
+  .left {
+    float: left;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+   .center {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .curved-edge {
+  border-radius: 50px;
+  background-color: lightblue;
+  padding: 20px;
+  }
+
+</style>
+    
+      
+    <div class ="center">
+      <h1>Present Image</h1>
+      <img src="{{ image2 }}" style ="width:80%;height:200px:;border-radius: 20px;background-color: black;padding: 5px;">
+      <h2 style="font-size: 30px">The image is classified as {{ class_name2}}</h2>
+
+     
+    </div>
+    <div>
+
+    <footer style = "clear: both;">
+      <div class = "">
+        <form action="/previous1" method="post">
+          <input type="submit" value="Next picture" >
+        </form>
+        <form action="/redirect" method="post">
+          <input type="submit" value="Home" >
+        </form>
+      </div>
+    </footer>  
+  
+  </body>
+</html>

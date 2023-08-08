@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block head %}{% endblock%}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+  </head>
+  <body>
+    <style>
+  .left {
+    float: left;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+   .center {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .curved-edge {
+  border-radius: 50px;
+  background-color: lightblue;
+  padding: 20px;
+  }
+
+</style>
+    
+    <div class ="left" >
+      <h1>Past Image</h1>
+      <img src="{{ image1 }}" style ="width: 60%; height: 200px;border-radius: 20px;background-color: black;padding: 5px;">
+      <h3>{{date1}}</h3>
+      <img src=" {{ image3 }}" style="width: 60%; height: 200px;border-radius: 20px;background-color: black;padding: 5px;">
+    </div>
+
+      
+    <div class ="right">
+      <h1>Present Image</h1>
+      <img src="{{ image2 }}" style ="width:60%;height:200px;border-radius: 20px;background-color: black;padding: 5px;">
+     <h3>{{date2}}</h3>
+     <img src="{{ image4 }}" style = "width: 60%; height: 200px;border-radius: 20px;background-color: black;padding: 5px;">
+    </div>
+    <div>
+      
+    </div>
+    <footer>
+      <div style = "clear: both;">
+        <h2>The {{string}} area is  {{ value }} %</h2>
+        <form action = "/previous"  method="post">
+          <input type="submit" value="next Picture">
+        </form>
+        <form action = "/redirect"  method="post" >
+          <input type="submit" value="Home">
+        </form>
+      </div>
+    </footer>  
+  
+  </body>
+</html>

@@ -1,8 +1,9 @@
 ## Project Description
 
-Deforestation is a critical environmental issue, and it is essential to monitor and detect deforestation activities for conservation efforts. This project focuses on building a deforestation detection system that leverages machine learning algorithms to analyze satellite imagery and detect deforestation activities. This project is done as a part of the Undergraduate Minor Project with the team effort of four group members : - [Contributor: @githubusername](https://github.com/DipeshBartaula)
-- [Contributor: @githubusername](https://github.com/cwane)
-- [Contributor: @githubusername](https://github.com/bishalrijal227)
+Deforestation is a critical environmental issue, and it is essential to monitor and detect deforestation activities for conservation efforts. This project focuses on building a deforestation detection system that leverages machine learning algorithms to analyze satellite imagery and detect deforestation activities. This project is done as a part of the Undergraduate Minor Project with the team effort of four group members : - 
+- [Contributor: DipeshBartaula](https://github.com/DipeshBartaula)
+- [Contributor: cwane](https://github.com/cwane)
+- [Contributor: bishalrijal227](https://github.com/bishalrijal227)
 - NGAWANG SOPHA TAMANG
 
 Key features of the project include:

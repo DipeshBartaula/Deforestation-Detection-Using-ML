@@ -14,11 +14,11 @@ Key features of the project include:
 
 ## Getting Started
 
-To get started with the project, follow the instructions below.
+To get started with the project, follow the instructions below. You need to clone the master branch including all the files
 
 ### Prerequisites
 
-Before running the project, make sure you have the following prerequisites installed on your system:
+Before running the project, make sure you have the following prerequisites installed on your system which allows to run the project:
 
 - Python 3.x
 - Virtual Environment (recommended)
